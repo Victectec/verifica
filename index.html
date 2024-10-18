@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pesquisa de Satisfação</title>
+</head>
+<body>
+
+<header>
+    <h1>Nome do Site</h1>
+    <h2>Pesquisa de Satisfação de Navegação</h2>
+</header>
+
+<form id="feedbackForm">
+    <fieldset>
+        <legend>Informações Pessoais</legend>
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+    </fieldset>
+
+    <fieldset>
+        <legend>Avaliação de Navegação</legend>
+        <label>Avalie sua experiência:</label>
+        <label><input type="radio" name="rating" value="1"> 1 Estrela</label>
+        <label><input type="radio" name="rating" value="2"> 2 Estrelas</label>
+        <label><input type="radio" name="rating" value="3"> 3 Estrelas</label>
+        <label><input type="radio" name="rating" value="4"> 4 Estrelas</label>
+        <label><input type="radio" name="rating" value="5"> 5 Estrelas</label>
+    </fieldset>
+
+    <fieldset>
+        <legend>Feedback</legend>
+        <label>Selecione os aspectos que você gostaria de comentar:</label>
+        <label><input type="checkbox" name="feedback" value="Facilidade de Navegação"> Facilidade de Navegação</label>
+        <label><input type="checkbox" name="feedback" value="Design do Site"> Design do Site</label>
+        <label><input type="checkbox" name="feedback" value="Velocidade de Carregamento"> Velocidade de Carregamento</label>
+
+        <label for="comments">Comentários adicionais:</label>
+        <textarea id="comments" name="comments" rows="4"></textarea>
+    </fieldset>
+
+    <button type="submit">Enviar</button>
+</form>
+
+<pre id="storageSimulation" style="border: 1px solid #ccc; padding: 10px; margin-top: 20px;">
+    Dados armazenados simuladamente:
+</pre>
+<script src="script.js"></script>
+</body>
+</html>
